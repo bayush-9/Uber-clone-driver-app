@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:drivers_app/tab_pages/earning_tab.dart';
 import 'package:drivers_app/tab_pages/home_tab.dart';
 import 'package:drivers_app/tab_pages/profile_tab.dart';
@@ -25,7 +27,6 @@ class _MainScreenState extends State<MainScreen>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tabController = TabController(length: 4, vsync: this);
     onItemClicked(0);
